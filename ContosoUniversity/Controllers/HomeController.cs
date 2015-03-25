@@ -11,7 +11,7 @@ namespace ContosoUniversity.Controllers
         public ActionResult Index()
         {
    
-            return View();
+            return View();s
         }
 
         public ActionResult About()
