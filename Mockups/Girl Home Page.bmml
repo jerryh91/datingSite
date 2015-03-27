@@ -92,7 +92,7 @@
     <control controlID="44" controlTypeID="com.balsamiq.mockups::TextArea" x="58" y="245" w="250" h="89" measuredW="200" measuredH="140" zOrder="18" locked="false" isInGroup="-1">
       <controlProperties>
         <color>0</color>
-        <text>Pool%20of%20Guys</text>
+        <text>All%20Guys</text>
       </controlProperties>
     </control>
     <control controlID="45" controlTypeID="com.balsamiq.mockups::RoundButton" x="82" y="793" w="-1" h="-1" measuredW="32" measuredH="32" zOrder="19" locked="false" isInGroup="-1">
@@ -117,12 +117,12 @@
         <text>On%20Click</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="354" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="354" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="431" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="431" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>

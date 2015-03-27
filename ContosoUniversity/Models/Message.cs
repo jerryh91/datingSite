@@ -9,6 +9,7 @@ namespace ContosoUniversity.Models
     {
 
         public int ID { get; set; }
+        //ProfileID: Profile that had sent the msg or received msg?
         public int ProfileID {get; set;}
         public string MessageContent { get; set; }
 

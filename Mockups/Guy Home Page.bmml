@@ -114,7 +114,7 @@
     <control controlID="29" controlTypeID="com.balsamiq.mockups::TextArea" x="60" y="250" w="250" h="89" measuredW="200" measuredH="140" zOrder="22" locked="false" isInGroup="-1">
       <controlProperties>
         <color>0</color>
-        <text>Pool%20of%20Girl%20Contacts/Likers</text>
+        <text>Girl%20Message%20Senders%20or%20Likers</text>
       </controlProperties>
     </control>
     <control controlID="31" controlTypeID="__group__" x="60" y="62" w="1670" h="271" measuredW="1670" measuredH="271" zOrder="23" locked="false" isInGroup="-1">
@@ -164,12 +164,12 @@
         </control>
       </groupChildrenDescriptors>
     </control>
-    <control controlID="32" controlTypeID="com.balsamiq.mockups::CallOut" x="252" y="435" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="32" controlTypeID="com.balsamiq.mockups::CallOut" x="252" y="435" w="-1" h="-1" measuredW="38" measuredH="40" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>
     </control>
-    <control controlID="33" controlTypeID="com.balsamiq.mockups::CallOut" x="252" y="354" w="-1" h="-1" measuredW="37" measuredH="43" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="33" controlTypeID="com.balsamiq.mockups::CallOut" x="252" y="354" w="-1" h="-1" measuredW="37" measuredH="37" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
