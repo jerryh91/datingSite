@@ -38,7 +38,7 @@
     </control>
     <control controlID="33" controlTypeID="com.balsamiq.mockups::TextArea" x="58" y="492" w="250" h="89" measuredW="200" measuredH="140" zOrder="7" locked="false" isInGroup="-1">
       <controlProperties>
-        <text>Who%20I%20Liked</text>
+        <text>My%20Likes</text>
       </controlProperties>
     </control>
     <control controlID="34" controlTypeID="com.balsamiq.mockups::TextArea" x="58" y="572" w="250" h="89" measuredW="200" measuredH="140" zOrder="8" locked="false" isInGroup="-1">
@@ -117,12 +117,12 @@
         <text>On%20Click</text>
       </controlProperties>
     </control>
-    <control controlID="55" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="354" w="-1" h="-1" measuredW="37" measuredH="40" zOrder="24" locked="false" isInGroup="-1">
+    <control controlID="55" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="354" w="-1" h="-1" measuredW="37" measuredH="39" zOrder="24" locked="false" isInGroup="-1">
       <controlProperties>
         <text>1</text>
       </controlProperties>
     </control>
-    <control controlID="56" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="431" w="-1" h="-1" measuredW="38" measuredH="39" zOrder="25" locked="false" isInGroup="-1">
+    <control controlID="56" controlTypeID="com.balsamiq.mockups::CallOut" x="251" y="431" w="-1" h="-1" measuredW="38" measuredH="37" zOrder="25" locked="false" isInGroup="-1">
       <controlProperties>
         <text>3</text>
       </controlProperties>

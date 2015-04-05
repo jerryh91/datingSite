@@ -14,6 +14,10 @@ namespace ContosoUniversity.DAL
      public DbSet<Enrollment> Enrollments { get; set; }
      public DbSet<Course> Courses { get; set; }
 
+     //Additional DbSet for DatingSite: 
+     //Put here for now, import to separate *Context file later
+     public DbSet<Profile> Profiles { get; set; }
+     public DbSet<Message> Messages { get; set; }
 
      protected override void OnModelCreating(DbModelBuilder modelBuilder)
      {
