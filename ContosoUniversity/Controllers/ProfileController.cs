@@ -18,17 +18,22 @@ namespace ContosoUniversity.Controllers
         // GET: Profiles
         public ActionResult Index()
         {
-            return View(db.Profiles.ToList());
+            return View(db.ProfileDetails.ToList());
         }
 
         // GET: Profiles/Details/5
         public ActionResult Details(int? id)
         {
+            //Verify if User has allowed url to be accessed while logged out
+            //If yes: continue execution
+            //if else: only if user has logged in can execute
+
+
             if (id == null)
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Profile profile = db.Profiles.Find(id);
+            ProfileDetail profile = db.ProfileDetails.Find(id);
             if (profile == null)
             {
                 return HttpNotFound();
@@ -47,11 +52,11 @@ namespace ContosoUniversity.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,UserName,Age,Location,Gender")] Profile profile)
+        public ActionResult Create([Bind(Include = "ID,UserName,Age,Location,Gender")] ProfileDetail profile)
         {
             if (ModelState.IsValid)
             {
-                db.Profiles.Add(profile);
+                db.ProfileDetails.Add(profile);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
@@ -66,7 +71,7 @@ namespace ContosoUniversity.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Profile profile = db.Profiles.Find(id);
+            ProfileDetail profile = db.ProfileDetails.Find(id);
             if (profile == null)
             {
                 return HttpNotFound();
@@ -79,7 +84,7 @@ namespace ContosoUniversity.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,UserName,Age,Location,Gender")] Profile profile)
+        public ActionResult Edit([Bind(Include = "ID,UserName,Age,Location,Gender")] ProfileDetail profile)
         {
             if (ModelState.IsValid)
             {
@@ -97,7 +102,7 @@ namespace ContosoUniversity.Controllers
             {
                 return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
             }
-            Profile profile = db.Profiles.Find(id);
+            ProfileDetail profile = db.ProfileDetails.Find(id);
             if (profile == null)
             {
                 return HttpNotFound();
@@ -105,13 +110,13 @@ namespace ContosoUniversity.Controllers
             return View(profile);
         }
 
-        // POST: Profiles/Delete/5
+        // POST: ProfileDetail/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
         {
-            Profile profile = db.Profiles.Find(id);
-            db.Profiles.Remove(profile);
+            ProfileDetail profile = db.ProfileDetails.Find(id);
+            db.ProfileDetails.Remove(profile);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

@@ -5,7 +5,7 @@ using System.Web;
 
 namespace ContosoUniversity.Models
 {
-    public class Profile
+    public class ProfileDetail
     { 
         //classNameID or ID is interpreted by EF as PK.
         public int ID { get; set; }
@@ -13,24 +13,20 @@ namespace ContosoUniversity.Models
         public string Age { get; set; }
         public string Location { get; set; }
         public string Gender { get; set; }
-        public Dictionary<string, string> ProfileDetails { get; set; }
+        public Dictionary<string, string> OptionalDetails { get; set; }
 
-        public Profile()
+        public ProfileDetail()
         {
-            ProfileDetails = new Dictionary<string, string>()
+            OptionalDetails = new Dictionary<string, string>()
             {
-                {"CurrentCity", ""},
+            
                 {"HighSchool", ""},
                 {"UndergraduateSchool", ""},
                 {"GraduateSchool", ""},
 
             };
         }
-
-        //Profile : Message Association
-        //1 Profile Can send *(Multiple) Messages
-        public virtual ICollection<Message> Messages { get; set; }
-
+        public virtual ProfileMeta ProfileMeta { get; set; }
     }
  
 }

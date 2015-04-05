@@ -27,7 +27,7 @@ namespace ContosoUniversity.Controllers
             //student entity set need to be IQueryable not Dbset to call OrderBy methods
             var students = from s in db.Students
                            select s;
-
+  
             if (!String.IsNullOrEmpty(SearchString))
             {
                students = students.Where(s => s.LastName.ToUpper().Contains(SearchString.ToUpper()) ||
