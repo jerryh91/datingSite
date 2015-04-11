@@ -13,19 +13,24 @@ namespace ContosoUniversity.Models
         public string Age { get; set; }
         public string Location { get; set; }
         public string Gender { get; set; }
-        public Dictionary<string, string> OptionalDetails { get; set; }
+      
+        //Optional Details
+        public string HighSchool { get; set; }
+        public string UndergraduateSchool { get; set; }
+        public string GraduateSchool { get; set; }
 
-        public ProfileDetail()
-        {
-            OptionalDetails = new Dictionary<string, string>()
-            {
-            
-                {"HighSchool", ""},
-                {"UndergraduateSchool", ""},
-                {"GraduateSchool", ""},
+        //public Dictionary<string, string> OptionalDetails { get; set; }
+        //public ProfileDetail()
+        //{
+        //    OptionalDetails = new Dictionary<string, string>()
+        //    {
 
-            };
-        }
+        //        {"HighSchool", ""},
+        //        {"UndergraduateSchool", ""},
+        //        {"GraduateSchool", ""},
+
+        //    };
+        //}
         public virtual ProfileMeta ProfileMeta { get; set; }
     }
  

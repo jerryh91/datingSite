@@ -127,6 +127,18 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201504111832441_ArrayListNotMapped.cs" />
+    <Compile Include="Migrations\201504111832441_ArrayListNotMapped.Designer.cs">
+      <DependentUpon>201504111832441_ArrayListNotMapped.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504111921125_AddedTestField2.cs" />
+    <Compile Include="Migrations\201504111921125_AddedTestField2.Designer.cs">
+      <DependentUpon>201504111921125_AddedTestField2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201504111923069_RemovedTestField2.cs" />
+    <Compile Include="Migrations\201504111923069_RemovedTestField2.Designer.cs">
+      <DependentUpon>201504111923069_RemovedTestField2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ConversationMeta.cs" />
     <Compile Include="Models\Course.cs" />
@@ -203,6 +215,17 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201504111832441_ArrayListNotMapped.resx">
+      <DependentUpon>201504111832441_ArrayListNotMapped.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504111921125_AddedTestField2.resx">
+      <DependentUpon>201504111921125_AddedTestField2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201504111923069_RemovedTestField2.resx">
+      <DependentUpon>201504111923069_RemovedTestField2.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

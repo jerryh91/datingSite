@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Web;
 
@@ -11,6 +12,7 @@ namespace ContosoUniversity.Models
         public int ID {get; set;}
 
         //Dynamic Array: All messages for a given conversation/msg thread
+        [NotMapped]
         public ArrayList MessageDetailsID {get; set;}
         public int InitiatorID { get; set; }
         public int ResponderID { get; set; }
