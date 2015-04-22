@@ -119,6 +119,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HelloWorldController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LoginController.cs" />
     <Compile Include="Controllers\ProfileController.cs" />
     <Compile Include="Controllers\StudentController.cs" />
     <Compile Include="DAL\DatingSiteContext.cs" />
@@ -127,17 +128,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504111832441_ArrayListNotMapped.cs" />
-    <Compile Include="Migrations\201504111832441_ArrayListNotMapped.Designer.cs">
-      <DependentUpon>201504111832441_ArrayListNotMapped.cs</DependentUpon>
+    <Compile Include="Migrations\201504212250127_Reset.cs" />
+    <Compile Include="Migrations\201504212250127_Reset.Designer.cs">
+      <DependentUpon>201504212250127_Reset.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201504111921125_AddedTestField2.cs" />
-    <Compile Include="Migrations\201504111921125_AddedTestField2.Designer.cs">
-      <DependentUpon>201504111921125_AddedTestField2.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201504111923069_RemovedTestField2.cs" />
-    <Compile Include="Migrations\201504111923069_RemovedTestField2.Designer.cs">
-      <DependentUpon>201504111923069_RemovedTestField2.cs</DependentUpon>
+    <Compile Include="Migrations\201504212329184_test2.cs" />
+    <Compile Include="Migrations\201504212329184_test2.Designer.cs">
+      <DependentUpon>201504212329184_test2.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\ConversationMeta.cs" />
@@ -147,6 +144,7 @@
     <Compile Include="Models\MessageDetail.cs" />
     <Compile Include="Models\ProfileDetail.cs" />
     <Compile Include="Models\ProfileMeta.cs" />
+    <Compile Include="Models\Register.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -205,6 +203,11 @@
     <Content Include="Views\Messages\Details.cshtml" />
     <Content Include="Views\Messages\Edit.cshtml" />
     <Content Include="Views\Messages\Index.cshtml" />
+    <Content Include="Views\Login\Create.cshtml" />
+    <Content Include="Views\Login\Delete.cshtml" />
+    <Content Include="Views\Login\Details.cshtml" />
+    <Content Include="Views\Login\Edit.cshtml" />
+    <Content Include="Views\Login\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -217,14 +220,11 @@
     <None Include="Project_Readme.html" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201504111832441_ArrayListNotMapped.resx">
-      <DependentUpon>201504111832441_ArrayListNotMapped.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504212250127_Reset.resx">
+      <DependentUpon>201504212250127_Reset.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504111921125_AddedTestField2.resx">
-      <DependentUpon>201504111921125_AddedTestField2.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201504111923069_RemovedTestField2.resx">
-      <DependentUpon>201504111923069_RemovedTestField2.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201504212329184_test2.resx">
+      <DependentUpon>201504212329184_test2.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

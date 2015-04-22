@@ -12,18 +12,34 @@
 <table class="table">
     <tr>
         <th>
+            @Html.DisplayNameFor(model => model.ProfileDetail.UserName)
+        </th>
+        <th>
             @Html.DisplayNameFor(model => model.Username)
         </th>
-
+        <th>
+            @Html.DisplayNameFor(model => model.password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ProfileDetailID)
+        </th>
         <th></th>
     </tr>
 
 @foreach (var item in Model) {
     <tr>
         <td>
+            @Html.DisplayFor(modelItem => item.ProfileDetail.UserName)
+        </td>
+        <td>
             @Html.DisplayFor(modelItem => item.Username)
         </td>
-       
+        <td>
+            @Html.DisplayFor(modelItem => item.password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ProfileDetailID)
+        </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
             @Html.ActionLink("Details", "Details", new { id=item.ID }) |

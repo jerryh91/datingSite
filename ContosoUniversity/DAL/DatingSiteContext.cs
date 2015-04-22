@@ -21,6 +21,7 @@ namespace ContosoUniversity.DAL
         {
             //Disable/Remove pluralizing of table names
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+
         }
     }
 }

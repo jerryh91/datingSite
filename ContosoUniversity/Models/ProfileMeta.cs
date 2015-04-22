@@ -8,17 +8,19 @@ using System.Web;
 
 namespace ContosoUniversity.Models
 {
+    //ProfileMeta is Principal
+    //ProfileDetail is Dependent
     public class ProfileMeta
     {
-        [Key, ForeignKey("ProfileDetail")]
+        [DatabaseGeneratedAttribute(DatabaseGeneratedOption.Identity)]
         public int ID { get; set; }
         public string Username { get; set; }
         public string password { get; set; }
 
         //Dynamic Array
-        [NotMapped]
-        public ArrayList ConversationMetaID { get; set; } 
-        public int ProfileDetailID { get; set; }
+        //[NotMapped]
+        //public ArrayList ConversationMetaID { get; set; } 
+        //public int ProfileDetailID { get; set; }
 
         public virtual ProfileDetail ProfileDetail {get; set;}
         public virtual ICollection<MessageDetail> MessageDetails { get; set; }

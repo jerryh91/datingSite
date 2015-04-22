@@ -12,8 +12,8 @@ namespace ContosoUniversity.Models
         public int ID {get; set;}
 
         //Dynamic Array: All messages for a given conversation/msg thread
-        [NotMapped]
-        public ArrayList MessageDetailsID {get; set;}
+        //[NotMapped]
+        //public string MessageDetailsID {get; set;}
         public int InitiatorID { get; set; }
         public int ResponderID { get; set; }
 
